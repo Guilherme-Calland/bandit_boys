@@ -1,16 +1,24 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://default_env.tres" type="Environment" id=1]
 [ext_resource path="res://scenes/players/joseph/Joseph.tscn" type="PackedScene" id=2]
+[ext_resource path="res://graphics/test/isometric_floor.png" type="Texture" id=3]
 
 [node name="TestLevel" type="WorldEnvironment"]
 environment = ExtResource( 1 )
 
-[node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 1.48911, 3.74192 )
+[node name="World" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0 )
+
+[node name="Camera" type="Camera" parent="World"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.297727, 3.24843 )
 projection = 1
 current = true
 size = 3.0
 
-[node name="Joseph" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 0.92388, 0.382684, 0, -0.382684, 0.92388, 0, 0, 0 )
+[node name="Joseph" parent="World" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="IsometricTiles" type="Sprite3D" parent="World"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.27457 )
+texture = ExtResource( 3 )
