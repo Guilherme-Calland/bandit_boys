@@ -1,24 +1,40 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://default_env.tres" type="Environment" id=1]
 [ext_resource path="res://scenes/players/joseph/Joseph.tscn" type="PackedScene" id=2]
-[ext_resource path="res://graphics/test/isometric_floor.png" type="Texture" id=3]
+[ext_resource path="res://graphics/test/floor_sprite.png" type="Texture" id=3]
+
+[sub_resource type="BoxShape" id=1]
+
+[sub_resource type="BoxShape" id=2]
 
 [node name="TestLevel" type="WorldEnvironment"]
 environment = ExtResource( 1 )
 
 [node name="World" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 0.92388, 0.382684, 0, -0.382684, 0.92388, 0, 0, 0 )
 
 [node name="Camera" type="Camera" parent="World"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.297727, 3.24843 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.0974, 8.81863 )
 projection = 1
 current = true
 size = 3.0
 
 [node name="Joseph" parent="World" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+collision_mask = 2
 
-[node name="IsometricTiles" type="Sprite3D" parent="World"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.27457 )
+[node name="CollisionShape" type="CollisionShape" parent="World/Joseph"]
+transform = Transform( 0.237237, 0, 0, 0, 0.257987, 0, 0, 0, 0.234324, 0, -0.0339494, 0 )
+shape = SubResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -0.029953, -1.08306, 0.00604248 )
+collision_layer = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.827782, 0 )
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite3D" parent="StaticBody"]
+transform = Transform( 1.98246, 0, 0, 0, -4.37114e-08, -1, 0, 1.95369, -8.53984e-08, 0, 0.17761, 0 )
 texture = ExtResource( 3 )

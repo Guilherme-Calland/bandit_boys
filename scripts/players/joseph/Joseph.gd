@@ -2,6 +2,7 @@ extends KinematicBody
 
 var motion = Vector3.ZERO
 export var speed = 1.0
+export var gravity = 0.2
 onready var animationPlayer = $Animation/AnimationPlayer
 
 func _process(delta):
@@ -18,6 +19,11 @@ func _process(delta):
 		motion.x = speed
 	else:
 		motion.x = 0
+		
+	if(is_on_floor()):
+		motion.y = 0
+	else:
+		motion.y -= gravity
 	
 	if(motion.x != 0 or motion.z != 0):
 		animationPlayer.play("running_south")
