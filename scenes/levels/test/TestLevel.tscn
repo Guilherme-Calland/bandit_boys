@@ -13,4 +13,4 @@ current = true
 size = 3.0
 
 [node name="Joseph" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 0.92388, 0.382684, 0, -0.382684, 0.92388, 0, 0, 0 )

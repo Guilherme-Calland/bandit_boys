@@ -6,9 +6,9 @@ onready var animationPlayer = $Animation/AnimationPlayer
 
 func _process(delta):
 	if(Input.is_action_pressed("up") and not Input.is_action_pressed("down")):
-		motion.z = -speed/2
+		motion.z = -speed
 	elif (Input.is_action_pressed("down") and not Input.is_action_pressed("up")):
-		motion.z = speed/2
+		motion.z = speed
 	else:
 		 motion.z = 0
 	
