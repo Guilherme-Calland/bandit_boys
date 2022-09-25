@@ -14,6 +14,10 @@ config/name="Bandit Heroes"
 run/main_scene="res://scenes/levels/test/TestLevel.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=800
+
 [importer_defaults]
 
 texture={

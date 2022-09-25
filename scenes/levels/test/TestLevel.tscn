@@ -1,22 +1,18 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://default_env.tres" type="Environment" id=1]
 [ext_resource path="res://scenes/players/joseph/Joseph.tscn" type="PackedScene" id=2]
-[ext_resource path="res://graphics/test/floor_sprite.png" type="Texture" id=3]
-[ext_resource path="res://graphics/test/isometric_floor_2.png" type="Texture" id=4]
-
-[sub_resource type="BoxShape" id=2]
+[ext_resource path="res://graphics/test/isometric_floor_big.png" type="Texture" id=3]
 
 [node name="TestLevel" type="WorldEnvironment"]
 environment = ExtResource( 1 )
 
 [node name="World" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.92388, 0.382684, 0, -0.382684, 0.92388, 0, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 0.866026, 0.5, 0, -0.5, 0.866026, 0, 0, 0 )
 
 [node name="TileSprite" type="Sprite3D" parent="World"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.499396, -0.515515 )
-visible = false
-texture = ExtResource( 4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.117319, -16.3402 )
+texture = ExtResource( 3 )
 
 [node name="Camera" type="Camera" parent="World"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00160217, -0.408936, 9.10176 )
@@ -26,15 +22,3 @@ size = 3.0
 
 [node name="Joseph" parent="World" instance=ExtResource( 2 )]
 collision_mask = 2
-
-[node name="StaticBody" type="StaticBody" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.805093, 0 )
-collision_layer = 2
-
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-transform = Transform( 0.35, 0, 0, 0, 1, 0, 0, 0, 0.35, 0, -1.00833, 0 )
-shape = SubResource( 2 )
-
-[node name="Sprite3D" type="Sprite3D" parent="StaticBody"]
-transform = Transform( 0.685697, 0, 0, 0, 0.242165, 0, 0, 0, 0.999999, 0, -0.15136, -0.359514 )
-texture = ExtResource( 3 )

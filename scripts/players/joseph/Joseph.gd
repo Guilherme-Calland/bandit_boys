@@ -20,10 +20,11 @@ func _process(delta):
 	else:
 		motion.x = 0
 		
-	if(is_on_floor()):
-		motion.y = 0
-	else:
-		motion.y -= gravity
+#	if(is_on_floor()):
+#		motion.y = 0
+#	else:
+#		animationPlayer.play("falling_south")
+#		motion.y -= gravity
 	
 	if(motion.x != 0 or motion.z != 0):
 		animationPlayer.play("running_south")
