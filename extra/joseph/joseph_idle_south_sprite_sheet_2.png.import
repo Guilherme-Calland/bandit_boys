@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/joseph_running_sprite_sheet.png-f45598c9a2dba5820790bd50dee9f6c9.stex"
+path="res://.import/joseph_idle_south_sprite_sheet_2.png-d6e17c6a8a8d991bf3dc513ca67dc210.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/joseph/joseph_running_sprite_sheet.png"
-dest_files=[ "res://.import/joseph_running_sprite_sheet.png-f45598c9a2dba5820790bd50dee9f6c9.stex" ]
+source_file="res://extra/joseph/joseph_idle_south_sprite_sheet_2.png"
+dest_files=[ "res://.import/joseph_idle_south_sprite_sheet_2.png-d6e17c6a8a8d991bf3dc513ca67dc210.stex" ]
 
 [params]
 

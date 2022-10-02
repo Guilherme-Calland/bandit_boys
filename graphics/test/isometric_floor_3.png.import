@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sprite-0002isometric_floor_single_tile.png-3f4d84fbc347b72e004bb9c40ec8deec.stex"
+path="res://.import/isometric_floor_3.png-933d169f4725d2e14986e9e9fb82a6a0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/test/Sprite-0002isometric_floor_single_tile.png"
-dest_files=[ "res://.import/Sprite-0002isometric_floor_single_tile.png-3f4d84fbc347b72e004bb9c40ec8deec.stex" ]
+source_file="res://graphics/test/isometric_floor_3.png"
+dest_files=[ "res://.import/isometric_floor_3.png-933d169f4725d2e14986e9e9fb82a6a0.stex" ]
 
 [params]
 
@@ -23,7 +23,7 @@ flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/joseph_running_sprite_sheet.png-f45598c9a2dba5820790bd50dee9f6c9.stex"
+path="res://.import/floor_sprite_diagonal.png-04d687377a14c40a1cd64eecdcbbd4f5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/joseph/joseph_running_sprite_sheet.png"
-dest_files=[ "res://.import/joseph_running_sprite_sheet.png-f45598c9a2dba5820790bd50dee9f6c9.stex" ]
+source_file="res://graphics/test/floor_sprite_diagonal.png"
+dest_files=[ "res://.import/floor_sprite_diagonal.png-04d687377a14c40a1cd64eecdcbbd4f5.stex" ]
 
 [params]
 
@@ -23,7 +23,7 @@ flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
