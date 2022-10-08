@@ -8,13 +8,24 @@
 [node name="GreySingleTile" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 
-[node name="GreySingleTileWall" type="Sprite" parent="."]
-modulate = Color( 1, 0.862745, 0.862745, 1 )
+[node name="RedWall" type="Sprite" parent="."]
+modulate = Color( 1, 0.862745, 0.862745, 0.486275 )
 position = Vector2( 37, 16 )
 texture = ExtResource( 2 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="GreySingleTileWall"]
+[node name="StaticBody2D" type="StaticBody2D" parent="RedWall"]
 collision_layer = 2
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GreySingleTileWall/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RedWall/StaticBody2D"]
+polygon = PoolVector2Array( -17, 7, 0, 16, 17, 7, 0, -1 )
+
+[node name="BlueWall" type="Sprite" parent="."]
+modulate = Color( 0.862745, 0.878431, 1, 0.486275 )
+position = Vector2( 80, 17 )
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="BlueWall"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BlueWall/StaticBody2D"]
 polygon = PoolVector2Array( -17, 7, 0, 16, 17, 7, 0, -1 )
