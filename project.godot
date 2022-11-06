@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="Bandit Heroes"
+config/name="Bandit Boys"
 run/main_scene="res://scenes/levels/test/TestLevel.tscn"
 config/icon="res://icon.png"
 
