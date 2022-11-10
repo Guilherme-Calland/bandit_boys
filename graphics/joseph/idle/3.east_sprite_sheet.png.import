@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/joseph.png-f9c4291bcba48402f9379d99a389c305.stex"
+path="res://.import/3.east_sprite_sheet.png-2c41d0ab69363aee6727b256c6c0540c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://extra/joseph/joseph.png"
-dest_files=[ "res://.import/joseph.png-f9c4291bcba48402f9379d99a389c305.stex" ]
+source_file="res://graphics/joseph/idle/3.east_sprite_sheet.png"
+dest_files=[ "res://.import/3.east_sprite_sheet.png-2c41d0ab69363aee6727b256c6c0540c.stex" ]
 
 [params]
 
