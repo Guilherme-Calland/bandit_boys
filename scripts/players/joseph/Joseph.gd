@@ -74,10 +74,10 @@ func _process(delta):
 	
 	## animation	
 	var animationKey
-	#if motion.x == 0 && motion.y == 0:
-	animationKey = Animations.IDLE
-	#else:
-		#animationParam = Animations.RUNNING
+	if motion.x == 0 && motion.y == 0:
+		animationKey = Animations.IDLE
+	else:
+		animationKey = Animations.RUNNING
 	
 	animate(animationKey, direction)
 
